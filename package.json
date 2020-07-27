@@ -1,0 +1,17 @@
+{
+  "name": "hn-utils",
+  "version": "0.0.2",
+  "description": "Utils",
+  "keywords": [
+    "util"
+  ],
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Prtens <15267188913@qq.com>",
+  "license": "ISC",
+  "dependencies": {
+    "js-cookie": "^2.2.1"
+  }
+}

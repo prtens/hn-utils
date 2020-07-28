@@ -1,19 +1,17 @@
 <script>
-  function getWeek(time, pre = '星期', nums = '日一二三四五六') {
-    let date;
-    if (typeof time === 'object') {
-      date = time;
-    } else {
-      if (typeof time === 'string' && /^[0-9]+$/.test(time)) {
-        time = parseInt(time);
+  function fnSort(arr) {
+    var t;
+    //arr[0]
+    for (var i = 0; i < arr.length - 1; i++) {
+      for (var j = i + 1; j < arr.length; j++) {
+        if (arr[i] > arr[j]) {
+          t = arr[i];
+          arr[i] = arr[j];
+          arr[j] = t;
+        }
       }
-      if (typeof time === 'number' && time.toString().length === 10) {
-        time = time * 1000;
-      }
-      date = new Date(time);
     }
-    return pre + nums[date.getDay()];
+    return arr;
   }
-  console.log(navigator.userAgent);
-  console.log(getWeek('1595903819'));
+  console.log(fnSort([12, 562, 23, 67, 7, 8, 9, 5]));
 </script>

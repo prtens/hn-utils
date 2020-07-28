@@ -1,9 +1,19 @@
 <script>
-  function escape2Html(str) {
-    var arrEntities = { lt: '<', gt: '>', nbsp: ' ', amp: '&', quot: '"' };
-    return str.replace(/&(lt|gt|nbsp|amp|quot);/gi, function (all, t) {
-      return arrEntities[t];
-    });
+  function getWeek(time, pre = '星期', nums = '日一二三四五六') {
+    let date;
+    if (typeof time === 'object') {
+      date = time;
+    } else {
+      if (typeof time === 'string' && /^[0-9]+$/.test(time)) {
+        time = parseInt(time);
+      }
+      if (typeof time === 'number' && time.toString().length === 10) {
+        time = time * 1000;
+      }
+      date = new Date(time);
+    }
+    return pre + nums[date.getDay()];
   }
-  console.log(escape2Html('<div></div>'));
+  console.log(navigator.userAgent);
+  console.log(getWeek('1595903819'));
 </script>

@@ -1,13 +1,16 @@
 'use strict';
 
 const Utils = {
-  Caches: require('./lib/caches'),
-  File: require('./lib/file'),
-  Logger: require('./lib/logger'),
-  String: require('./lib/string'),
-  Time: require('./lib/time'),
-  Common: require('./lib/index'),
-  Validate: require('./lib/validate'),
+  array: require('./lib/array'),
+  caches: require('./lib/caches'),
+  common: require('./lib/index'),
+  file: require('./lib/file'),
+  html: require('./lib/html'),
+  logger: require('./lib/logger'),
+  random: require('./lib/random'),
+  string: require('./lib/string'),
+  time: require('./lib/time'),
+  validate: require('./lib/validate'),
 };
 
 module.exports = Utils;

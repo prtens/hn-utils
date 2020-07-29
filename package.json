@@ -1,9 +1,10 @@
 {
   "name": "hn-utils",
-  "version": "0.0.3",
+  "version": "0.0.5",
   "description": "Utils",
   "keywords": [
-    "util"
+    "util",
+    "javascript"
   ],
   "main": "index.js",
   "scripts": {

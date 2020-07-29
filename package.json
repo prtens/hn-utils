@@ -6,9 +6,8 @@
     "util",
     "javascript"
   ],
-  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": ""
   },
   "author": "Prtens <15267188913@qq.com>",
   "license": "ISC",

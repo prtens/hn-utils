@@ -12,5 +12,5 @@ module.exports = {
   scrollTo: require('./lib/scrollTo'),
   string: require('./lib/string'),
   time: require('./lib/time'),
-  validate: require('./lib/validate'),
+  validate: require('./lib/validates'),
 };

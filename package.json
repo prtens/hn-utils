@@ -19,6 +19,7 @@
     "url": "https://github.com/prtens/hn-utils/issues"
   },
   "dependencies": {
+    "dayjs": "^1.10.4",
     "js-cookie": "^2.2.1"
   },
   "engines": {

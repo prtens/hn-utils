@@ -1,6 +1,6 @@
 {
   "name": "hn-utils",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "Utils",
   "keywords": [
     "util",
@@ -20,7 +20,10 @@
   },
   "dependencies": {
     "dayjs": "^1.10.4",
-    "js-cookie": "^2.2.1"
+    "file-saver": "^2.0.5",
+    "js-cookie": "^2.2.1",
+    "lodash": "^4.17.21",
+    "xlsx": "^0.17.0"
   },
   "engines": {
     "node": ">=8.9",
